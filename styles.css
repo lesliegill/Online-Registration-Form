@@ -44,12 +44,13 @@ h2 {
 
 }
 
-h3,
 legend {
   color:#36434C;
   text-align:left;
   font-weight: bolder;
   font-size:1.4em;
+  padding-top:15px;
+  padding-bottom:30px;
 
 }
 
@@ -68,11 +69,6 @@ padding:0;
   padding:20px 0;
 }
 
-
-legend {
-  padding-top:15px;
-  padding-bottom:30px;
-}
 
 div[class*="entry"] {
   padding:1em 0;
@@ -94,6 +90,7 @@ label {
 height:50px;
 border-radius:5px;
 background-color:#F1F2F2;
+transition:all, 0.70s;
 }
 
 #name:focus {
@@ -132,10 +129,6 @@ background-color:#F1F2F2;
   font-style:italic;
   text-align:right;
   padding-right:.3em;
-}
-
-.entry:focus {
-background-color:white;
 }
 
 
@@ -240,49 +233,46 @@ footer {
 
   }
 
-  legend {
-    padding-left:150px;
-    padding-top:30px;
-    padding-bottom:40px;
-    width:100%;
-  }
 
-
-div[class*="entry"] {
-flex-direction:row;
-align-items:baseline;
-flex-basis:100%;
-  }
-
-
-label {
+  div[class*="entry"] {
   flex-direction:row;
-  width:190px;
+  align-items:baseline;
+  flex-basis:100%;
+    }
 
+
+  label {
+    flex-direction:row;
+    width:190px;
+
+  }
+
+#contact {
+  padding-left:150px;
 }
 
 
-#name,
-#mail,
-#phonenumber,
-#streetaddress,
-#city,
-#state {
-  max-width:100%;
-  flex-grow:1;
-}
+  #name,
+  #mail,
+  #phonenumber,
+  #streetaddress,
+  #city,
+  #state {
+    max-width:100%;
+    flex-grow:1;
+  }
 
-#postcode {
-  flex-grow:1;
-  max-width:30%;
-}
+  #postcode {
+    flex-grow:1;
+    max-width:30%;
+  }
 
 
-.newsletter {
-display:flex;
-margin:0 auto;
-padding-top:25px;
-max-width:75%;
-}
+  .newsletter {
+  display:flex;
+  margin:0 auto;
+  padding-top:25px;
+  max-width:75%;
+  }
 
-}
+  }
