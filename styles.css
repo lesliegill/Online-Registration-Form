@@ -1,0 +1,288 @@
+/*----------Universal Selectors----------*/
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Merriweather', serif;
+}
+
+/*----------Header----------*/
+
+header {
+  color:white;
+  background-color:#36434C;
+  text-align: center;
+  font-size:12px;
+  padding:15px;
+}
+
+h2 {
+  color:#36434C;
+  text-align:center;
+  font-weight: bolder;
+  font-size:1.6em;
+  padding-top:15px;
+}
+
+.intro {
+  border-bottom:solid #36434C;
+  border-left:0;
+  border-right:0;
+  padding:0;
+}
+
+
+.intro-p {
+  text-align:center;
+  color:#B8B8B9;
+  border-bottom:3px solid #36434C;
+  border-bottom-width: thick;
+  margin-bottom:4px;
+  padding-bottom: 35px;
+
+}
+
+h3,
+legend {
+  color:#36434C;
+  text-align:left;
+  font-weight: bolder;
+  font-size:1.4em;
+
+}
+
+/*----------Main----------*/
+
+fieldset {
+border:none;
+margin:0;
+padding:0;
+}
+
+
+.form {
+  display:flex;
+  flex-direction: column;
+  padding:20px 0;
+}
+
+
+legend {
+  padding-top:15px;
+  padding-bottom:30px;
+}
+
+div[class*="entry"] {
+  padding:1em 0;
+  display:flex;
+  flex-direction:column;
+}
+
+label {
+  color:#36434C;
+}
+
+#name,
+#mail,
+#phonenumber,
+#streetaddress,
+#city,
+#state,
+#postcode {
+height:50px;
+border-radius:5px;
+background-color:#F1F2F2;
+}
+
+#name:focus {
+  background-color: white;
+}
+
+#mail:focus {
+  background-color: white;
+}
+
+#phonenumber:focus {
+  background-color: white;
+}
+
+#streetaddress:focus {
+  background-color: white;
+}
+
+#city:focus {
+  background-color: white;
+}
+
+#state:focus {
+  background-color: white;
+}
+#postcode:focus {
+  background-color: white;
+}
+
+#comments:focus {
+  background-color:#F1F2F2;
+}
+
+
+::-webkit-input-placeholder {
+  font-style:italic;
+  text-align:right;
+  padding-right:.3em;
+}
+
+.entry:focus {
+background-color:white;
+}
+
+
+
+
+/*----------Newsletter Section----------*/
+
+.newsletter {
+  color:#36434C;
+  background-color:#F1F1F2;
+  border-top:3px solid #36434C;
+  padding:20px 0;
+  flex-basis:100%;
+  display:flex;
+  flex-direction: column;
+  margin:0 auto;
+
+}
+
+#comments {
+  border-radius:5px;
+  background-color:white;
+  height:75px;
+  width:100%;
+}
+
+
+button {
+  background-color:#35BCBC;
+  color:white;
+  font-size:1em;
+  height:50px;
+  width:100%;
+  border-radius: 5px;
+}
+
+
+input:focus,
+textarea:focus {
+  outline-color: #35BCBC;
+}
+
+
+button,
+input[type=checkbox],
+input[type="radio"] {
+  cursor:pointer;
+}
+
+input[type="radio"]:checked + label {
+  color:#35BCBC;
+  font-weight:bold;
+}
+
+
+input[type="checkbox"]:checked + label {
+  color:#35BCBC;
+  font-weight:bold;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  color:#B8B8B9;
+}
+
+
+/*----------Desktop----------*/
+
+@media (min-width:768px) {
+
+  .intro,
+  .intro-p {
+    border:none;
+    padding-bottom:0;
+  }
+
+  .border {
+    color:#B8B8B9;
+    border-bottom:3px solid #36434C;
+    border-bottom-width: thick;
+    padding-top:3em;
+    margin:0 auto;
+    max-width:75%;
+  }
+
+
+  .border-2 {
+    color:#B8B8B9;
+    border-bottom:2px solid #36434C;
+    padding-bottom:4px;
+    margin:0 auto;
+    max-width:75%;
+
+  }
+
+  .form {
+    display:flex;
+    flex-direction:column;
+    padding:0 150px;
+    max-width:100%;
+
+  }
+
+  legend {
+    padding-left:150px;
+    padding-top:30px;
+    padding-bottom:40px;
+    width:100%;
+  }
+
+
+div[class*="entry"] {
+flex-direction:row;
+align-items:baseline;
+flex-basis:100%;
+  }
+
+
+label {
+  flex-direction:row;
+  width:190px;
+
+}
+
+
+#name,
+#mail,
+#phonenumber,
+#streetaddress,
+#city,
+#state {
+  max-width:100%;
+  flex-grow:1;
+}
+
+#postcode {
+  flex-grow:1;
+  max-width:30%;
+}
+
+
+.newsletter {
+display:flex;
+margin:0 auto;
+padding-top:25px;
+max-width:75%;
+}
+
+}
